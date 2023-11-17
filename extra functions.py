@@ -2,18 +2,21 @@
 # def case(string):
 #     upper = 0
 #     lower = 0
+#     space = 0
 #     for x in range(len(string)):
 #         newstring = ''
 #         newstring = newstring + string[x]
-#         if newstring != ' ':
-#             if newstring.isupper():
-#                 upper += 1
-#             elif newstring.islower:
-#                 lower += 1
-#     resp = (f'No. of Upper case characters: {upper} \nNo. of Lower case characters: {lower}')
+#         if newstring == ' ':
+#             space += 1
+#         elif newstring.isupper():
+#             upper += 1
+#         elif newstring.islower:
+#             lower += 1
+#         
+#     resp = (f'No. of Upper case characters: {upper} \nNo. of Lower case characters: {lower} (the number of spaces is {space} btw)')
 #     return resp
 #             
-# print(case(str(input(''))))
+# print(case(str(input('write sumn '))))
 
 
 
@@ -40,7 +43,7 @@
 #         if num/x != num//x:
 #             check += 1
 #     
-#     if check+2 == num:
+#     if check+2 == num or num==1:
 #         ans = 'WOOOOO this number IS prime'
 #     else:
 #         ans = 'BOOHOO this number IS NOT prime'
