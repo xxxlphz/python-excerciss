@@ -1,0 +1,75 @@
+#christmas revision 1
+
+# #q1
+# name = input("enter your name: ")
+# print(f'Hello {name}')
+
+
+
+# #q2
+# n1 = int(input('enter a number '))
+# n2 = int(input('enter another number '))
+# n3 =n1+ n2
+# print(n3)
+
+
+
+# #q3
+# c = int(input('enter a temperature in celsius: '))
+# f = 9/5*c + 32
+# print(f)
+
+
+# #q4
+# principle = int(input('enter a principle '))
+# rate = int(input('enter a rate '))
+# time = int(input('enter a time '))
+# interest = principle*rate*time / 100
+# print(interest)
+
+
+
+# #q5
+# s = int(input('enter seconds '))
+# m = s//60
+# h = m//60
+# print(f'Hours: {h} \nMinutes: {m} \nSeconds: {s}')
+
+
+
+# #q6
+# v1 = int(input('write a number '))
+# v2 = int(input('write another number '))
+# pop1 = v1
+# pop2 = v2
+# v1 = pop2
+# v2 = pop1
+# print(v1,v2)
+
+
+
+#q7
+#STUCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
