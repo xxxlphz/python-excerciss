@@ -48,8 +48,30 @@
 
 
 
-#q7
-#STUCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+# #q7
+# v1 = int(input('write a number '))
+# v2 = int(input('write another number '))
+# print(v1,v2)
+# v1, v2 = v2, v1
+# print(v1,v2)
+
+
+# #q8
+# r = int(input('enter the radius for your circle '))
+# pi = 3.141592653589793238462643383279502884197
+# a = pi * r**2 //1
+# c = 2*pi*r //1
+# print('area is around',a,'cm²\ncircumference is around',c,'cm')
+
+
+
+# #q9
+# l = int(input('enter a length for your rectangle '))
+# w = int(input('enter a width for your rectangle '))
+# a = w*l
+# p = (w+l)*2
+# print(f'the area of the rectangle is {a}\nit\'s perimeter is {p}')
+
 
 
 
