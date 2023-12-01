@@ -1,0 +1,70 @@
+#christmas exams 2
+
+# #q1
+# num = int(input('enter a nummber: '))
+# if num%2 == 0:
+#     print('even')
+# else:
+#     print('odd')
+
+
+
+# #q2
+# age = int(input('enter your age: '))
+# if  age >= 18:
+#     if age < 100:
+#         vote = 'you are able to vote'
+#     else:
+#         vote = 'dawg you are DEAD'
+# elif age < 18:
+#     vote = 'you are ineligible to vote right now'
+# print(vote)
+
+
+
+#q3
+# n1 = int(input('enter a number '))
+# n2 = int(input('enter another number '))
+# if n1>n2:
+#     print(n1,'is bigger')
+# elif n2>n1:
+#     print(n2,'is bigger')
+# else:
+#     print('these two numbers are equal')
+
+
+
+# #q4
+# n = int(input('enter a number '))
+# if n == 0:
+#     print(f'the number you entered is Zero ({n})')
+# elif n < 0:
+#     print(n,'is Negative')
+# else:
+#     print(n,'is Positive')
+
+
+
+# #q5
+# age = int(input('enter your age: '))
+# if age>=0 and age<=12:
+#     print('you\'re a child')
+# elif age>12 and age<=19:
+#     print('you\'re a teenager')
+# elif age>19 and age<=59:
+#     print('you\'re an adult')
+# elif age>59:
+#     print('you\'re a senior citizen')
+
+
+
+
+
+
+
+
+
+
+
+
+
