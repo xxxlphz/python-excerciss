@@ -21,7 +21,10 @@ while len(countries) >0:
         score += 1
         named.append(country)
         countries.remove(country)
+    elif country in named:
+        print('you already named this country')
     elif country == 'named':
+        print('')
         print(*named,'\n')
     elif country == 'hint':
         country = r.choice(countries)
