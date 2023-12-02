@@ -1,12 +1,12 @@
 #hangman
 import random as r
-import time
+import time as t
 
 print('--------HANGMAN---------\n\n')
 
 choices = ['banana','motorbike','car','book','desk','basketball','table','mercedes','ferrari','america','ireland','watermelon','apple','stupendous','extravagant']
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-lives = 4
+lives = 7
 score = 0
 correct = []
 current = []
@@ -20,11 +20,12 @@ while current != correct:
     print(*current,'     incorrect guesses:',*incorrectguesses)
     print('\nlives left:',lives)
     guess = input('\nim thinking of a word. guess a letter in the word: ')
-    time.sleep(0.3)
+    guess = guess.lower()
+    t.sleep(0.3)
     
     if len(guess) > 1:
-        print('\n---->thats more than one letter, go again: \n\n\n')
-        time.sleep(0.8)
+        print('\n---->thats more than one character, go again: \n\n\n')
+        t.sleep(0.8)
     
     elif guess not in alphabet:
         print('\n---->that is NOT a letter lil bro, go again: \n\n\n')
@@ -32,11 +33,11 @@ while current != correct:
     
     elif guess in incorrectguesses or guess in current:
         print('\n---->you already guessed that, go again\n\n\n')
-        time.sleep(0.8)
+        t.sleep(0.8)
     
     elif guess in correct:
         print('\nCORRECT! go again\n\n\n')
-        time.sleep(0.6)
+        t.sleep(0.6)
         score +=1
         for x in correct:
             ind += 1
@@ -48,9 +49,12 @@ while current != correct:
         print('\n---->nope! sorry, try again\n\n\n')
         lives -= 1
         incorrectguesses.append(guess)
-        time.sleep(1)
+        t.sleep(1)
     if lives == 0:
-        print(f'\nlol u lost \nthe word was', *correct)
+        word = ''
+        for x in correct:
+            word = word + x
+        print(f'\nlol u lost \nthe word was', word)
         break
 if lives > 0:
     print(*current)
