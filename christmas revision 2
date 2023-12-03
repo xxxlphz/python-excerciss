@@ -58,13 +58,136 @@
 
 
 
+# #q6
+# num = int(input('write a number between 1 and 7: '))
+# week =['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+# if num >=1 and num <= 7:
+#     print(week[num-1])
+# else:
+#     print('that number is out of range')
+
+# #another way (no error message)
+# week =['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+# print(week[int(input('write a number: '))-1])
 
 
 
+# #q7
+# w = float(input('enter your weight in kgs: '))
+# h = float(input('enter your height in meters: '))
+# bmi = w/(h*h)
+# if bmi < 18.5:
+#     print('Underweight')
+# elif bmi >= 18.5 and bmi < 25:
+#     print('Normal weight')   
+# elif bmi >= 30 and bmi < 30:
+#     print('Overweight')
+# else:
+#     print('Obesity')
 
 
 
+# #q8
+# grade1 =float(input('enter the grade of your first subject: '))
+# grade2 =float(input('enter the grade of your second subject: '))
+# grade3 =float(input('enter the grade of your third subject: '))
+# avg = (grade1+grade2+grade3)/3
+# print("%0.2f" % avg)
+# if avg >= 90:
+#     print('A')
+# elif avg >= 80:
+#     print('B')
+# elif avg >= 70:
+#     print('C')
+# elif avg >= 60:
+#     print('D')
+# else:
+#     print('F')
+
+
+# #q9
+# import math as m
+# print('ax**2+ bx + c = 0 when a ≠ 0')
+# a = int(input('enter the value of a: '))
+# b = int(input('enter the value of b: '))
+# c = int(input('enter the value of c: '))
+# disc = b**2 -4*a*c
+# root1 = (-1*b + m.sqrt(disc))/2*a
+# root2 = (-1*b - m.sqrt(disc))/2*a
+# if disc == 0:
+#     print('function has 2 equal roots')
+# elif disc > 0:
+#     print('function has 2 real roots')
+# else:
+#     print('function has 2 complex/imaginary roots')
+# print(f'your roots are %.2f' % root1 ,'and %.2f' % root2)
 
 
 
+# #q10
+# n1 = int(input('enter a number '))
+# n2 = int(input('enter another number '))
+# n3 = int(input('enter another number '))
+# while True:
+#     if n1 < n2 and n2< n3:
+#         break
+#     else:
+#         if n1 > n2:
+#             n1,n2 = n2, n1
+#         elif n2 > n3:
+#             n2,n3 = n3,n2
+# print('sorted numbers in ascending order:',n1,n2,n3)
 
+
+
+# #q11
+# n1 = int(input('enter a number '))
+# n2 = int(input('enter another number '))
+# n3 = int(input('enter another number '))
+# while True:
+#     if n1 < n3 and n2< n3:
+#         break
+#     else:
+#         if n1 > n2:
+#             n1,n2 = n2, n1
+#         elif n2 > n3:
+#             n2,n3 = n3,n2
+# print('the largest number you entered is',n3)
+
+
+
+# #q12
+# ltr = input('enter a letter: ').lower()
+# consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
+# vowels = ['a','e','i','o','u']
+# if ltr in consonants:
+#     print('that letter is a consonant')
+# elif ltr in vowels:
+#     print('that letter is a vowel')
+# else:
+#     print('thats not a letter')
+
+
+
+# # q13
+# yr = int(input('enter a year(yyyy): '))
+# if yr%4 == 0:
+#     print('leap year')
+# else:
+#     print('NOT a leap year')
+    
+
+
+# #q14
+# calls = int(input('enter a number of calls: '))
+# bill = 200
+# if calls > 100 and calls <= 150:
+#     calls -= 100
+#     bill += calls*0.6
+# elif calls > 150 and calls <= 200:
+#     calls -= 150
+#     bill += (50*0.6) + (calls*0.5)
+# elif calls > 200:
+#     calls -= 200
+#     bill += (50*0.6) + (50*0.5) + (calls*0.4)
+# print('Total bill amount is %.1f' % bill)
