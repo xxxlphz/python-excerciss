@@ -1,10 +1,13 @@
 #hangman
 import random as r
 import time as t
+choices = []
+f = open('C:\\Users\\19AAbdallah.ACC\\thonny\\hangmanwords.txt','r')
 
+for line in f:
+    choices.append(line)
 print('--------HANGMAN---------\n\n')
-
-choices = ['banana','motorbike','car','book','desk','basketball','table','mercedes','ferrari','america','ireland','watermelon','apple','stupendous','extravagant']
+f.close()
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 lives = 7
 score = 0
