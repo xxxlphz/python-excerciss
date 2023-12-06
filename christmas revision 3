@@ -1,0 +1,72 @@
+# christmas revision 3
+ 
+# #q1
+# for x in range(10):
+#     print(x+1)
+ 
+ 
+# #q2
+# for x in range(20,0,-1):
+#     print(x)
+ 
+ 
+# #q3
+# for x in range(1,11):
+#     if x%2 == 0:
+#         print(x)
+ 
+ 
+# #q4
+# n = int(input('enter a number '))
+# for x in range(n+1):
+#     if x > 1 and x%2 == 0:
+#         print(x)
+ 
+ 
+# #q5
+# n = int(input('enter a number '))
+# for x in range(n+1):
+#     if x > 1 and x%2 == 1:
+#         print(x)
+ 
+ 
+# #q6
+# for x in range(5):
+#     print('Happy birthday!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+ 
+ 
+# #q7
+# n = int(input('enter a number '))
+# for x in range(n):
+#     x+= 1
+#     print(x**2)
+ 
+ 
+# #q8
+# n = int(input('enter a number '))
+# for x in range(12):
+#     x += 1
+#     print(n*x)
+ 
+ 
+# #q9
+# v = -1
+# for x in range(8):
+#     v += 4
+#     print(v)
+
+ 
+ 
+# #q10
+# v = 2
+# for x in range(6):
+#     print(v)
+#     v *= 3
+ 
+ 
+# #q11
+# n = int(input('enter a number '))
+# v = 0
+# for x in range(n):
+#     v += x
+#     print(v)
