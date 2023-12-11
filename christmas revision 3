@@ -70,3 +70,38 @@
 # for x in range(n):
 #     v += x
 #     print(v)
+
+
+
+# #q12
+# n = int(input('enter a positive number '))
+# sum = 0
+# for x in range(n):
+#     x += 1
+#     r = 1/x
+#     sum += r
+# print(f'the sum of reciprocals from 1 to {n} is: %.2f' %sum)
+
+
+
+# #q13
+# sum = 0
+# for x in range(5):
+#     sum += int(input('enter a number '))
+# print('The final running total is:', sum)
+
+
+
+# #q14
+# n = int(input('enter a positive number '))
+# fact = 1
+# for x in range(n):
+#     fact *= x+1
+# if n < 0 :
+#     print('a factorial doesnt exist for negative numbers')
+# else:
+#     print(f'{n} factorial is {fact}')
+
+
+
+#q15
