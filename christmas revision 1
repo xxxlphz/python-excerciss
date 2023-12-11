@@ -74,24 +74,20 @@
 
 
 
+# #q10
+# import math as m
+# a = int(input('enter the length of a side of a triangle: '))
+# b = int(input('enter the length of a side of a triangle: '))
+# c = int(input('enter the length of a side of a triangle: '))
+# s = (a+b+c)/2
+# a = m.sqrt(s*(s-a)*(s-b)*(s-c))
+# print(f'area of the triangle is %.2f' %a)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# #q11
+# principle = int(input('enter a principle '))
+# rate = int(input('enter a rate '))
+# time = int(input('enter a time '))
+# interest = principle*(1+rate/100)**time -principle
+# print('compund interest is %.4f' % interest)
