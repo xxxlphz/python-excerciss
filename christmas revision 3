@@ -104,4 +104,31 @@
 
 
 
-#q15
+# #q15
+# num = int(input('enter a number '))
+# exp = int(input('enter an exponent '))
+# prod = num
+# if exp == 0:
+#     prod = 1
+# elif exp < 0:
+#     for x in range((exp*-1)-1):
+#         prod *=num
+#     prod = 1/prod
+# else:
+#     for x in range(exp-1):
+#         prod *= num
+# print(prod)
+
+
+
+# #q16
+# nums = int(input('How many numbers would you like to enter (all integers) '))
+# ttl = 0
+# for x in range(nums):
+#     x += 1
+#     n = int(input(f'enter number {x}: ' ))
+#     if n <= 0:
+#         n = int(input(f'This is an invalid value. All numbers must be positive. Try again ' ))
+#     ttl += n
+# print(f'the sum of those numbers is {ttl}')
+# print('the average of those numbers is %2.f' % (ttl/nums))
