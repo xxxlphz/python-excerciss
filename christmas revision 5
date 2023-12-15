@@ -1,0 +1,73 @@
+#christmas revision 5
+
+# #q1
+# lis = []
+# leng = int(input('how many numbers do you want to enter? '))
+# for x in range(leng):
+#     num = int(input('enter a number '))
+#     lis.append(num)
+# for x in range(0,leng,2):
+#     print(lis[x])
+
+
+
+# #q2
+# lis = []
+# leng = int(input('how many numbers do you want to enter? '))
+# for x in range(leng):
+#     num = int(input('enter a number '))
+#     lis.append(num)
+# for x in range(len(lis)-1,-1,-1):
+#     print(lis[x])
+
+
+
+# #q3
+# list =[]
+# while True:
+#     typeshi = input('enter a number or end: ')
+#     if typeshi == 'end':
+#         break
+#     else:
+#         list.append(int(typeshi))
+# max = 0
+# for x in list:
+#     if max < x:
+#         max = x
+# print(max)
+
+
+
+# #q4
+# boop =[]
+# while True:
+#     typeshi = input('enter a number or end: ')
+#     if typeshi == 'end':
+#         break
+#     else:
+#         boop.append(int(typeshi))
+# print(boop)
+# last = boop.pop(-1)
+# boop.insert(0,last)
+# print(boop)
+
+
+
+#q5
+kodak = '"big ole ruby diamond on my pinky finger and it look like a ring rop" - kodak black'
+print(kodak)
+print('no. of characters:', len(kodak))
+
+list = kodak.split()
+word = input('\nwhat word do you want to remove ')
+if word in list:
+    list.remove(word)
+newstring = ''
+for x in list:
+    newstring += (x)
+    newstring += (' ')
+print('\n')
+print (newstring)
+print('no. of characters:', len(newstring))
+print(f'\nword removed is {word}')
+print('no. of characters:', len(word))
