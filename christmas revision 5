@@ -53,21 +53,49 @@
 
 
 
-#q5
-kodak = '"big ole ruby diamond on my pinky finger and it look like a ring rop" - kodak black'
-print(kodak)
-print('no. of characters:', len(kodak))
+# #q5
+# kodak = '"big ole ruby diamond on my pinky finger and it look like a ring pop" - kodak black'
+# print(kodak)
+# print('no. of characters:', len(kodak))
+# 
+# list = kodak.split()
+# word = input('\nwhat word do you want to remove ')
+# if word in list:
+#     list.remove(word)
+# newstring = ''
+# for x in list:
+#     newstring += (x)
+#     newstring += (' ')
+# print('\n')
+# print (newstring)
+# print('no. of characters:', len(newstring))
+# print(f'\nword removed is {word}')
+# print('no. of characters:', len(word))
 
-list = kodak.split()
-word = input('\nwhat word do you want to remove ')
-if word in list:
-    list.remove(word)
-newstring = ''
-for x in list:
-    newstring += (x)
-    newstring += (' ')
-print('\n')
-print (newstring)
-print('no. of characters:', len(newstring))
-print(f'\nword removed is {word}')
-print('no. of characters:', len(word))
+
+
+# #q6
+# date = input('enter a date in the form mm/dd/yyyy : ')
+# list = date.split('/')
+# months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+# for x in range(3):
+#     if x == 0:
+#         month = months[(int(list[x]))-1]
+#     elif x == 1:
+#         day = int(list[x])
+#     if x == 2:
+#         year = int(list[x])
+# print(month,day,',',year)
+
+
+
+# #q7
+# num = str(input('enter a 10 digit number '))
+# list =[]
+# newlist = []
+# for x in num:
+#     list.append(int(x))
+# for x in range(len(list)):
+#     if list[x] %2 == 1:
+#         newlist.append(x)
+# print(*newlist,sep=',')
