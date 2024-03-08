@@ -1,0 +1,54 @@
+'''introductary python excercises'''
+def ex1(a,b):
+     ans = a+b
+     return ans
+
+def ex2(string):
+    string = 'un' + string
+    return string
+
+def ex3(string):
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+
+def ex4(numlist):
+    even = [x for x in numlist if x%2 == 0]
+    odd = [x for x in numlist if x%2 == 1]
+    ans = []
+    
+    ans.append(len(even))
+    
+    ans.append(len(odd))
+    
+    todd = 0
+    for x in odd:
+        todd += x
+    ans.append(todd)
+
+    teven = 0
+    for x in even:
+        teven += x
+    ans.append(teven)
+    
+    ans.append(todd/len(odd))
+    
+    ans.append(teven/len(even))
+    
+    return ans
+
+
+numlist = [x for x in range(int(input('enter a number to go up to: ')))]
+print(ex4(numlist))
+
+
+'''if ex3(str(input('enter a word: '))) == True:
+    print('this is a palindrome!!!')
+else:
+    print('this is NOT a palindrome :(')'''
+
+#print(ex2(str(input('enter a word: '))))
+
+
+#numlist = [x for x in range(int(input('enter a number to go up to: ')))]
