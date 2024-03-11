@@ -39,16 +39,28 @@ def ex4(numlist):
     return ans
 
 
-numlist = [x for x in range(int(input('enter a number to go up to: ')))]
-print(ex4(numlist))
+num = int(input('Do you want to do excersize 1, 2, 3 or 4? '))
 
+if num == 1:
+    sum = ex1(int(input('enter two numbers \n')),int(input('')))
+    print(f'the total is {sum}')
 
-'''if ex3(str(input('enter a word: '))) == True:
-    print('this is a palindrome!!!')
-else:
-    print('this is NOT a palindrome :(')'''
+elif num == 2:
+    print(ex2(str(input('enter a word: '))))
 
-#print(ex2(str(input('enter a word: '))))
+elif num == 3:
+    if ex3(str(input('enter a word: '))) == True:
+        print('this is a palindrome!!!')
+    else:
+        print('this is NOT a palindrome :(')
 
-
-#numlist = [x for x in range(int(input('enter a number to go up to: ')))]
+elif num == 4:
+    limit = [x for x in range(int(input('enter a number to go up to: ')))]
+    list = ex4(limit)
+    print(
+          '\nnumber of even numbers:',list[0],
+          '\nnumber of odd numbers:',list[1],
+          '\nsum of odd numbers:',list[2],
+          '\nsum of even numbers:',list[3],
+          '\naverage of odd number: %.0f' %list[4],
+          '\naverage of even numbers: %.0f' %list[5])
