@@ -1,0 +1,94 @@
+def dtobin(decimal):
+    string = ''
+    while decimal > 0:
+        if decimal%2 == 1:
+            string = string + '1'
+        elif decimal%2 == 0:
+            string = string + '0'
+        decimal = decimal//2
+    string = string[::-1]
+    return string
+def btodec(binary):
+    binary = str(binary)
+    binary = binary[::-1]
+    ttl = 0
+    p = 0
+    for x in binary:
+        if x =='1':
+            ttl+= (2**p)
+        p+=1
+    return ttl
+ 
+def btohex(binary):
+    split = []
+    ans = ''
+    heq = ['A','B','C','D','E','F']
+    while len(binary) %4 != 0:
+        binary = '0' + binary
+    for x in range(0,len(binary),4):
+        split.append(binary[x:x+4])
+    for x in split:
+         x = btodec(str(x))
+         if x >= 10:
+             x = heq[x-10]
+         ans = ans + str(x)
+    return ans
+def add(b, bb):
+    b = btodec(b)
+    bb = btodec(bb)
+    ans = b + bb
+    ans = dtobin(ans)
+    return ans
+print('Hello :0')
+while 1:
+    menu = int(input('''
+What number type do you have?
+1) Binary
+2) Decimal
+3) Hexadecimal
+    '''))
+      #binarys
+    if menu ==1:
+        menu2 = int(input('''
+    What do you want to do with the binary?
+    1) change to decimal
+    2) change to hexadecimal
+    3) add two
+    '''))
+        if menu2 == 1:
+            num = int(input('enter your binary: '))
+            print(btodec(num))
+        elif menu2 ==2:
+            num = str(input('enter your binary: '))
+            print(btohex(num))
+        elif menu2 == 3:
+            print(add(int(input('enter two binary numbers\n')),int(input(''))))
+    #decimals
+    elif menu ==2:
+        menu2 = int(input('''
+    What do you want to do with the decimal?
+    1) change to binary
+    2) change to hexadecimal
+    '''))
+        if menu2 == 1:
+            print(dtobin(int(input('Enter your decimal '))))
+ 
+
+
+# def btohex(binary):
+#     ans = '' 
+#     for x in str(binary):
+#         ans = ans + 'yup '
+#     return ans
+# print(btohex(int(input(''))))
+
+ 
+# def btohex(binary):
+#      ans = ''
+#      binary = binary[::-1]
+#      while len(binary) > 0:
+#          
+#          
+#      return ans
+#     
+# print(btohex(int(input(''))))
