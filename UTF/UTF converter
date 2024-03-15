@@ -29,10 +29,16 @@ def utf(string):
             while len(binary) != 16:
                 binary = '0' + binary
             result += '1110' + binary[:4] + '10' + binary[4:10] + '10' + binary[10:]
-    
+        elif len(binary) <= 21:
+            while len(binary) != 21:
+                binary = '0' + binary
+            result += '11110' + binary[:3] + '10' + binary[3:9] + '10' + binary[9:15] + '10' + binary[15:]
     
     
     
     return result
+
+
+
 
 print(utf(input('enter a string to change into utf: ')))
