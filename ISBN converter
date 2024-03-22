@@ -1,0 +1,26 @@
+isbn = input('enter your ISBN 10: ')
+isbn = isbn[:-1]
+isbn = '978-'+isbn
+digits = ''
+for x in isbn:
+    if x.isdigit() == True:
+        digits += x
+
+total = 0
+for x in range(len(digits)):
+    v = int(digits[x])
+    if x % 2 == 0:
+        total+= v * 1
+        
+    else:
+        total+= v * 3
+        
+
+check = total%10
+if check ==  0:
+    isbn += '0'
+
+else:
+    check = 10 - check
+    isbn += str(check)
+print(isbn)
