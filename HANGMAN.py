@@ -3,7 +3,7 @@ import random as r
 import time
 
 
-choices = ['banana','motorbike','car','book','desk','basketball','table','mercedes','ferrari','america','ireland','watermelon','apple','stupendous','extravagant']
+choices = ['banana','motorbike','car','book','desk','baskemtball','table','mercedes','ferrari','america','ireland','watermelon','apple','stupendous','extravagant']
 lives = 4
 score = 0
 correct = []
