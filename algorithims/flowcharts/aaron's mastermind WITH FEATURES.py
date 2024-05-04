@@ -16,7 +16,7 @@ colors = []
 print(norm)
 
 for x in range(4):
-    z = random.randint(0,3)
+    z = random.randint(0,len(possiblecolors)-1)
     colors.append(possiblecolors[z])
     
 rules = norm + '''
@@ -79,5 +79,5 @@ while True:
     if guess == colors:
         break
  
-print(norm,'YOU WIN WOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!! :D')
+print(norm+'YOU WIN WOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!! :D')
 print(f'guesses taken: {guesses}')
