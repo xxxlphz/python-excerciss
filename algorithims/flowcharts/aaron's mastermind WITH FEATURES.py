@@ -4,10 +4,10 @@ import random
 guesses = 0
 
 dim = Fore.WHITE + Style.NORMAL
-green = Fore.GREEN + "(g)reen"
-red = Fore.RED + "(r)ed"
-blue = Fore.BLUE + "(b)lue"
-yellow = Fore.YELLOW + "(y)ellow"
+green = Fore.GREEN + Style.BRIGHT + "(g)reen"
+red = Fore.RED + Style.BRIGHT + "(r)ed"
+blue = Fore.BLUE + Style.BRIGHT + "(b)lue"
+yellow = Fore.YELLOW + Style.BRIGHT + "(y)ellow"
 purp = Fore.MAGENTA + Style.BRIGHT + "(p)urple"
 norm = Fore.WHITE + Style.BRIGHT
 possiblecolors = [red,green,blue,yellow,purp]
@@ -19,7 +19,7 @@ for x in range(4):
     z = random.randint(0,3)
     colors.append(possiblecolors[z])
     
-rules = '''
+rules = norm + '''
 -------MASTERMIND-------
 
 RULES:
@@ -28,11 +28,11 @@ RULES:
     3. At the end of each turn, the user will be told if each color was correct & in the right place, correct & in the wrong place, or not in the computers arrangement
 *Note that colours can be repeated
 
-'''
+''' + dim
 print(rules)
-print('POSSIBLE COLOURS: ',end='');print(*possiblecolors, norm)
+print(norm,'POSSIBLE COLOURS: ',end='');print(*possiblecolors, norm)
 print('*For rules, enter \'rules\'')
-print(' For list of colours, enter \'colours\'\n', norm)
+print(' For list of colours remaining, enter \'(c)olours\'\n', dim)
 while True:
     guess = []
     for x in range(4):
@@ -40,10 +40,10 @@ while True:
         while 1:
             if mycolour.lower() == 'rules':
                 print(rules)
-                break
-            elif mycolour.lower() == 'colours' or mycolour.lower() == 'colors':
-                print(*possiblecolors,norm)
-                break
+                mycolour = input(f'enter colour {x+1}: ')
+            elif mycolour.lower() == 'colours' or mycolour.lower() == 'colors' or mycolour.lower() == 'c':
+                print(norm,*possiblecolors,dim)
+                mycolour = input(f'enter colour {x+1}: ')
             elif mycolour.lower() == 'red' or mycolour.lower() == 'r':
                 guess.append(red)
                 break
@@ -71,11 +71,13 @@ while True:
                 returned.append(f'{dim}partial')
             else:
                 returned.append(f'{dim}incorrect')
-    print('your guess:',*guess,norm)
+                if guess[i] in possiblecolors:
+                    possiblecolors.remove(guess[i])
+    print('your guess:',*guess,dim)
     print(*returned,end=('\n\n'))
     
     if guess == colors:
         break
  
-print('YOU WIN WOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!! :D')
+print(norm,'YOU WIN WOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!! :D')
 print(f'guesses taken: {guesses}')
