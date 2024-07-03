@@ -4,7 +4,7 @@ b = ['_','_','_']
 c = ['_','_','_']
 pcount = 0
 print('----TIC TAC TOE----');print('')
-game = input('Play against computer(c) or another person(p)? ')
+game = input('Play against (c)omputer or another (p)erson? ')
 if game != 'c' and game != 'p':
     game = input('INVALID INPUT. enter either \'c\' for computer or \'p\' for person: ')
 
