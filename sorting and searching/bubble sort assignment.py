@@ -50,7 +50,7 @@ print(f'{comparison_count} comparisons were made and {swap_count} swaps\nNote: g
 #     made in case they incorrectly entered an alphabetic chracter
 #     
 #     2.Perciptable information
-#     the colours showing the elements being comparred adn swapped/not swapped,
+#     the colours showing the elements being compared and swapped (or not swapped),
 #     each phase being printed as well as the orignal and sorted list being printed
 #     makes it easy for the user to follow the sorting process as it happens in a simple
 #     and understandable way
