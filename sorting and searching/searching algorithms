@@ -1,0 +1,35 @@
+def linear_search(l,targ):
+    if targ not in l:
+        return 'target not in list'
+    else:
+        for i in range(len(l)):
+            if l[i] == targ:
+                return f'the index value of your target is {i}'
+ 
+def binary_search(l,t):
+    l.sort()
+    low = 0
+    high = len(l) - 1
+    while 1:
+        mid = (low+high)//2
+        if t == l[mid]:
+            return f'the index value of your target is {mid-1}'
+            break
+        if t > l[mid]:
+            low = mid + 1
+        elif t < l[mid]:
+            high = mid - 1
+        elif low == high:
+            return'target not in list'
+            break
+
+ 
+ 
+type = input('do you want to do (l)inear search or (b)inary search? ')
+ 
+#entering list and target
+if type.lower() == 'l':
+    print(linear_search([input('enter a value to add to list ') for x in range(int(input('how many items do you want to add to the list??? ')))],input('enter your search target ')))
+ 
+elif type.lower() == 'b':
+    print(binary_search([int(input('enter number to add to list ')) for x in range(int(input('how many numbers do you want to add to the list??? ')))],int(input('enter your search target '))))
