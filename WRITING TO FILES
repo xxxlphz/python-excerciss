@@ -1,0 +1,41 @@
+#--------EXAMPLE/EXPLANATION ONLY---------
+# f = open('Names.txt','w')
+# f.write('ahmed\nchina\naaron\njohn\nadam\n')
+# f.close()
+# 
+# f = open('Names.txt','a') # writing wipes the file before writing
+# f.write(input('enter a name ')) # open('<path>','a') lets you ADD to a file instead of wiping it first
+# f.close()
+# 
+# f = open('Names.txt','r') # reads the file now
+# for line in f:
+#     print(line.strip())
+# f.close()
+
+
+#excercise 109
+while 1:
+    choice = input('1) Create a new file \n2) Display the file \n3) Add a new item to the file \nMake a selection 1, 2 or 3 ')
+    if choice == '1':
+        f = open('Subject.txt','w')
+        f.write(input('enter a new subject: '))
+        f.write('\n')
+        f.close()
+    elif choice == '2':
+        f = open('Subject.txt','r') # reads the file now
+        print('')
+        for line in f:
+            print(line.strip())
+        print('')
+        f.close()
+    elif choice == '3':
+        f = open('Subject.txt','a')
+        f.write(input('enter another subject: '))
+        f.write('\n')
+        f.close()
+    else:
+        print('\n')
+        print('invalid input, try again')
+        
+        
+
