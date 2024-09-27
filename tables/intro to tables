@@ -1,0 +1,46 @@
+# 2-D tables
+
+mytable =[[1,2,3],[4,5,6],[7,8,9]] #each mini list is a horizantal row
+                                   #and when printed after each other they make columns
+#printing in table format
+for x in mytable:
+    print(*x,sep = ',')
+
+print('')
+
+#to print a seperate row
+row = int(input('what row do you want to print? '))
+try:
+    print(f'row {row}: ',*mytable[row-1]) #only really need this line, row being the position of the row in big list
+except IndexError:
+    print('invalid input')
+
+
+
+
+#                                    -----better way using dictionaries-----
+
+#have a dictionary for each person in the dictionary!
+#each item in the dictionary is a person (row) and each of them has a value for each column (i.e height is a column)
+mytabledictionary = {'john':{'name':'JOHN ADAMS' , 'age': 17 , 'height': 180} , 'sarah':{'name': 'SARAH COLLINS' , 'age': 19 , 'height': 49 }}
+print(mytabledictionary['john']['name'])
+print(mytabledictionary['john']['height'])
+print('')
+
+#printing in table format
+names = [mytabledictionary[x]['name'] for x in mytabledictionary]
+length = len(max(names))
+for x in mytabledictionary.keys():
+    print(mytabledictionary[x]['name']+ ' '*((length-int(len(mytabledictionary[x]['name'])))+2) +':' ,mytabledictionary[x]['age'],',',mytabledictionary[x]['height'])
+
+
+
+
+
+
+
+
+
+
+
+
