@@ -7,7 +7,8 @@ print(columns)
  
 #to rename
 #df = df.rename(columns={'oldName1': 'newName1', 'oldName2': 'newName2'}) 
-df = df.rename(columns = {'DURATION' : 'LENGTH'})
+df = df.rename(columns = {'duration' : 'length'}) # use same case as original name not the upper, upper doesnt rewrite just prints
+columns = df.columns
 print(columns)
 
 #missing data
