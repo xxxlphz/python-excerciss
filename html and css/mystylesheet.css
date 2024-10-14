@@ -7,3 +7,9 @@ body {
     color: rgb(255, 5, 180);
     font-family: cursive;
 }
+
+#first <!-- referencing an id --> { 
+    stroke-width: 200%;
+    font-style: italic;
+    background-color: turquoise;
+}
