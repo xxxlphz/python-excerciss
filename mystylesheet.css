@@ -1,0 +1,9 @@
+h1,h2,h3,h4,h5,h6 {
+    font-stretch: extra-expanded;
+    color:chocolate ;
+}
+body {
+    background-color: rgb(255, 244, 181);
+    color: rgb(255, 5, 180);
+    font-family: cursive;
+}
